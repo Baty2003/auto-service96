@@ -12,9 +12,9 @@
 </head>
 <body>
 	<header class="header">
-		<div class="container flex-menu flex-menu--column">
-			<h1>AutoService96 - ремонт и обслуживание ГБО</h1>
-			<nav class="nav-menu-header">
+		<div class="container flex-menu flex-menu--column flex-menu--center">
+			<h1 class="title header__title">AutoService96 - ремонт и обслуживание ГБО</h1>
+			<nav class="header__nav-menu">
 				<ul class="nav-list">
 					<li class="nav-list__item"><a href="#" class="nav-list__link">Главная</a></li>
 					<li class="nav-list__item"><a href="#" class="nav-list__link">Youtube канал</a></li>
@@ -22,42 +22,76 @@
 					<li class="nav-list__item"><a href="#" class="nav-list__link">Контакты</a></li>
 				</ul>
 			</nav>
-			<div class="flex-menu">
+			<div class="flex-menu header__contact">
 				<a href="tel:+79920248888" class="header__tel">+7 992 024-88-88</a>
 				<a href="https://2gis.ru/ekaterinburg/geo/1267273050426526?m=60.725694%2C56.884852%2F16.04" class="header__address">г.Екатеринбург ул.Табиринская д.47</a>
 			</div>
 		</div>
 	</header>
 	<main class="main">
-		<div class="container">
-			<section class="services">
-				<h2 class="title services__title">Наши услуги</h2>
-				<div class="services__container">
-					<div class="services__item">
-						<img src="" alt="" class="services__item-img">
-						<div class="services__footer">
-							<p class="services__item-title">Установка</p>
-							<button class="services__button button"></button>
+		
+			<section class="services section">
+				<div class="container">
+					<h2 class="title services__title">Наши услуги</h2>
+					<div class="services__container">
+						<div class="services__item">
+							<img width="100px" src="assets/img/gbo.jpg" alt="газобалонное оборудование" class="services__item-img">
+							<div class="services__footer">
+								<p class="services__item-title">Установка ГБО на автомобили и обслуживание</p>
+								<a class="services__link">Перейти</a>
+							</div>
 						</div>
-					</div>
-					<div class="services__item">
-						<img src="" alt="" class="services__item-img">
-						<div class="services__footer">
-							<p class="services__item-title"></p>
-							<button class="services__button button"></button>
+						<div class="services__item">
+							<img width="100px" src="assets/img/vesta-cng-back.jpg" alt="орнамент vesta cng" class="services__item-img">
+							<div class="services__footer">
+								<p class="services__item-title">Lada Vesta CNG доработка (заводской метан)</p>
+								<a class="services__link">Перейти</a>
+							</div>
 						</div>
-					</div>
-					<div class="services__item">
-						<img src="" alt="" class="services__item-img">
-						<div class="services__footer">
-							<p class="services__item-title"></p>
-							<button class="services__button button"></button>
+						<div class="services__item">
+							<img width="100px" src="assets/img/partroniki.jpg" alt="" class="services__item-img">
+							<div class="services__footer">
+								<p class="services__item-title">Установка парктроников</p>
+								<a class="services__link">Перейти</a>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
-		</div>
+
+
+			<section class="about section">
+				<div class="container">
+					<h2 class="title services__title">О нас</h2>
+					<div class="section__content container--border-blue">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, vero. Placeat soluta magni blanditiis odio ratione nisi distinctio delectus, ea earum minus quae, ullam ex architecto commodi! Adipisci, officiis assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt, pariatur at, delectus rem consequatur velit expedita officiis eveniet hic ea laborum blanditiis eos odit, tenetur incidunt totam facere omnis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas iusto recusandae aliquid maiores maxime repellendus, aliquam, illo quae facilis ullam odio numquam eos doloribus ut veritatis. Tenetur, natus optio. Maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia molestiae laboriosam officia hic tempore dolorem odit blanditiis saepe fugit? Ratione amet ipsum totam perferendis porro incidunt sunt exercitationem id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, minima, praesentium optio corporis qui asperiores dolore voluptatum fuga voluptatem rem nesciunt harum iste culpa assumenda magnam cupiditate blanditiis alias molestias?</div>
+				</div>
+			</section>
+
+			<section class="benefits section">
+				<div class="container">
+					<h2 class="title services__title">Наши преимущества</h2>
+					<div class="section__content container--border-blue">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, vero. Placeat soluta magni blanditiis odio ratione nisi distinctio delectus, ea earum minus quae, ullam ex architecto commodi! Adipisci, officiis assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor deserunt, pariatur at, delectus rem consequatur velit expedita officiis eveniet hic ea laborum blanditiis eos odit, tenetur incidunt totam facere omnis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas iusto recusandae aliquid maiores maxime repellendus, aliquam, illo quae facilis ullam odio numquam eos doloribus ut veritatis. Tenetur, natus optio. Maxime! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quia molestiae laboriosam officia hic tempore dolorem odit blanditiis saepe fugit? Ratione amet ipsum totam perferendis porro incidunt sunt exercitationem id? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, minima, praesentium optio corporis qui asperiores dolore voluptatum fuga voluptatem rem nesciunt harum iste culpa assumenda magnam cupiditate blanditiis alias molestias?</div>
+				</div>
+			</section>
 	</main>
-	<footer class="footer container"></footer>
+	<footer class="footer">
+		<div class="container">
+			<h2>Контакты</h2>
+			<div class="flex-menu footer__flex-menu">
+				<div class="map">
+					<script class="apla" type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aa9ca3329d71db83294cab5ecddf0ec9055dc079ea7bb46aecfc4820abffca723&amp;width=320&amp;height=240&amp;lang=ru_RU&amp;scroll=true"></script></div>
+				<div class="footer__contact-container">
+
+					<p class="footer__address">г.Екатеринбург ул.Табиринская д.47</p>
+					<a href="tel:+79920248888" class="footer__tel">+7 992 024-88-88</a>
+					<ul class="social-list">
+						<li class="social-list__item"><a href="" class="social-list__link"><img src="assets/img/youtube-icon.png" alt=""></a></li>
+						<li class="social-list__item"><a href="" class="social-list__link"><img src="assets/img/vk-icon.png" alt=""></a></li>
+						<li class="social-list__item"><a href="" class="social-list__link"><img src="assets/img/whats-icon.png" alt=""></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

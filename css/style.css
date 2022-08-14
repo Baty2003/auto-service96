@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   background: white;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 16px;
+  min-width: 320px;
   margin: 0;
   padding: 0;
 }
@@ -15,4 +21,245 @@ body {
 .container {
   max-width: 1000px;
   padding: 0 10px;
+  margin: auto;
+}
+
+.container--border-blue {
+  border: 1px solid #11c6f3;
+  border-radius: 10px;
+}
+
+.header {
+  background: #051e6e;
+  color: white;
+  padding-top: 1px;
+  padding-bottom: 10px;
+}
+
+.header__tel, .header__address {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.header__tel:hover, .header__address:hover {
+  opacity: 0.6;
+}
+
+.header__title {
+  margin: 10px 0 0 0;
+}
+
+.header__nav-menu {
+  background: #016381;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0 5px;
+  margin: 10px 0;
+}
+
+.header__contact {
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flex-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-menu--column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-menu--center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 30px;
+  padding: 10px 0;
+}
+
+.nav-list__item {
+  text-align: center;
+  width: 20%;
+}
+
+.nav-list__link {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  background: #d4565c;
+  border-radius: 8px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.nav-list__link:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.8;
+}
+
+.main {
+  min-height: 100vh;
+  margin-bottom: 20px;
+}
+
+.section {
+  padding-bottom: 20px;
+}
+
+.section__content {
+  padding: 5px;
+}
+
+.services {
+  padding-top: 1px;
+  background: #e0dada;
+}
+
+.services__item-title {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0;
+  margin: 10px 0 80px 0;
+}
+
+.services__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services__item {
+  position: relative;
+  text-align: center;
+  max-height: 300px;
+  width: 280px;
+  background: white;
+  border-radius: 5px;
+  border: 1px solid orange;
+}
+
+.services__item-img {
+  width: 100%;
+  height: 150px;
+  border-radius: 5px 5px 0 0;
+}
+
+.services__footer {
+  padding: 0 5px;
+}
+
+.services__link {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #11c6f3;
+  padding: 5px 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.services__link:hover {
+  background: #11c6f3;
+  border-radius: 5px;
+}
+
+.title {
+  position: relative;
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  background: red;
+  width: 100%;
+  height: 2px;
+  top: 45px;
+  left: 0;
+}
+
+.footer {
+  border-top: 1px solid #000;
+  padding: 20px 0;
+}
+
+.footer__flex-menu {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.footer__contact {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer__contact-container {
+  border: 1px solid #11c6f3;
+  padding: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.social-list {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.social-list__item {
+  margin-right: 10px;
+}
+
+.social-list__item:last-child {
+  margin-right: 0px;
+}
+
+.social-list__link {
+  display: inline-block;
+}
+
+.social-list__link img {
+  width: 50px;
+  height: px;
 }
