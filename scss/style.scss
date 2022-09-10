@@ -30,8 +30,8 @@ body {
 	padding: 0 10px;
 	margin: auto;
 
-	&--border-blue {
-		border: 1px solid #11c6f3;
+	&--light-red-bg {
+		background: rgba(253, 108, 11, 0.164);
 		border-radius: 10px;
 	}
 }
@@ -177,11 +177,11 @@ body {
 .section {
 	padding-bottom: 20px;
 
-	&--dark-grey{
+	&--dark-grey {
 		background: rgb(49, 49, 49);
 	}
 
-	&--white-text{
+	&--white-text {
 		color: white;
 	}
 
@@ -191,15 +191,15 @@ body {
 		font-size: 20px;
 	}
 
-	&__img-div{
+	&__img-div {
 		text-align: center;
 	}
 
-	&__img{
+	&__img {
 		width: 400px;
 
 		@media (max-width:430px) {
-			&{
+			& {
 				width: 270px;
 			}
 		}
@@ -323,7 +323,7 @@ body {
 		left: 0;
 	}
 
-	&--white{
+	&--white {
 		color: white;
 	}
 }
@@ -470,13 +470,28 @@ body {
 		}
 	}
 
-	@media (max-width:716px) {
+	&__video {
+		width: 300px;
+		height: 200px;
+	}
+
+	@media (max-width:720px) {
 		&__item {
 			margin: 10px 0;
 		}
 
+		&__video {
+			width: 450px;
+		}
+
 		& {
 			flex-direction: column;
+		}
+	}
+
+	@media (max-width:500px) {
+		&__video {
+			width: 280px;
 		}
 	}
 }
@@ -519,7 +534,7 @@ body {
 	width: 100%;
 	border-collapse: collapse;
 
-	& tbody{
+	& tbody {
 		width: 100%;
 	}
 
@@ -538,17 +553,18 @@ body {
 		height: 100px;
 	}
 
-	&__post-scriptum{
+	&__post-scriptum {
 		margin: 10px 0;
 		color: rgba(95, 95, 95, 0.5);
 		font-size: 12px;
 	}
 
 	@media (max-width:400px) {
-		&{
+		& {
 			font-size: 16px;
 		}
-		&__img{
+
+		&__img {
 			width: 70px;
 			height: 70px;
 		}
@@ -561,7 +577,7 @@ body {
 		margin-bottom: 30px;
 	}
 
-	&__img{
+	&__img {
 		width: 300px;
 
 		@media (max-width:400px) {
@@ -570,5 +586,9 @@ body {
 	}
 }
 
-
-
+.site-map {
+	display: block;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}

@@ -804,3 +804,11 @@ hr{
     }
 }
 
+.site-map{
+	display: block;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+}
+
+
