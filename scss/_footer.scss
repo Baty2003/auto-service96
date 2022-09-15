@@ -1,0 +1,38 @@
+.footer {
+	border-top: 1px solid #000;
+	padding: 20px 0;
+
+	&__flex-menu {
+		justify-content: space-around;
+	}
+
+	&__contact {
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	&__address {}
+
+	&__tel {
+		color: white;
+		text-decoration: none;
+	}
+
+	&__contact-container {
+		border: 1px solid #11c6f3;
+		padding: 10px;
+		align-self: center;
+	}
+
+	@media (max-width:640px) {
+		&__flex-menu {
+			justify-content: start;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		.map {
+			margin-bottom: 30px;
+		}
+	}
+}

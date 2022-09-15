@@ -1,0 +1,34 @@
+.section {
+	padding-bottom: 20px;
+
+	&--dark-grey {
+		background: rgb(49, 49, 49);
+	}
+
+	&--white-text {
+		color: white;
+	}
+
+	&__content {
+		padding: 15px;
+		line-height: 24px;
+		font-size: 20px;
+	}
+
+	&__img-div {
+		text-align: center;
+	}
+
+	&__img {
+		width: 400px;
+
+		@media (max-width:430px) {
+			& {
+				width: 270px;
+			}
+		}
+	}
+
+	&__benefits {}
+
+}

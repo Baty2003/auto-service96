@@ -1,0 +1,42 @@
+.table-products {
+
+	margin: 0 auto;
+	width: 100%;
+	border-collapse: collapse;
+
+	& tbody {
+		width: 100%;
+	}
+
+	&__tr {
+		border-bottom: 1px solid black;
+	}
+
+	&__th {}
+
+	&__td {
+		text-align: center;
+	}
+
+	&__img {
+		width: 100px;
+		height: 100px;
+	}
+
+	&__post-scriptum {
+		margin: 10px 0;
+		color: rgba(95, 95, 95, 0.5);
+		font-size: 12px;
+	}
+
+	@media (max-width:400px) {
+		& {
+			font-size: 16px;
+		}
+
+		&__img {
+			width: 70px;
+			height: 70px;
+		}
+	}
+}

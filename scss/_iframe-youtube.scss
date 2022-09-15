@@ -1,0 +1,30 @@
+.iframe-youtube {
+	width: 400px;
+	height: 200px;
+
+	@media(max-width:874px) {
+		& {
+			width: 600px;
+			height: 300px;
+			margin-bottom: 10px;
+		}
+	}
+
+	@media(max-width:650px) {
+		& {
+			width: 400px;
+		}
+	}
+
+	@media(max-width:650px) {
+		& {
+			width: 300px;
+		}
+	}
+
+	@media(max-width:350px) {
+		& {
+			width: 270px;
+		}
+	}
+}

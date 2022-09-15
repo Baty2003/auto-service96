@@ -1,0 +1,75 @@
+.header {
+	position: relative;
+	background: #051e6e url("../assets/img/backgound-header-resize.jpg") no-repeat center 35%;
+	background-size: cover;
+	color: white;
+	padding-top: 1px;
+
+	&__parktronics {
+		background: #051e6e url("../assets/img/partronics-slim.jpg") no-repeat center 35%;
+		background-size: cover;
+	}
+
+	&__tel,
+	&__address {
+		display: block;
+		color: white;
+		text-decoration: none;
+		font-weight: bold;
+		transition: 0.2s;
+		text-align: center;
+
+		&:hover {
+			opacity: 0.6;
+		}
+	}
+
+
+	&__title {
+		margin: 10px 0 0 0;
+	}
+
+	&__nav-menu {
+		background: rgba(0, 0, 0, 0.5);
+		width: 100%;
+		border-radius: 5px;
+		padding: 0 5px;
+		margin: 10px 0;
+	}
+
+	&__contact {
+		width: 100%;
+		justify-content: space-around;
+	}
+
+	&__brightness {
+		background: rgba(0, 0, 0, 0.5);
+		padding-bottom: 10px;
+	}
+
+
+	@media(max-width:760px) {
+		& {
+			background-image: url(../assets/img/backgound-header.jpg);
+			background-position: center;
+			background-size: cover;
+		}
+
+		&__parktronics {
+			background-image: url(../assets/img/patronics.jpg);
+		}
+	}
+
+	@media(max-width:450px) {
+		&__contact {
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		&__tel,
+		&__address {
+			text-align: center;
+			margin-bottom: 10px;
+		}
+	}
+}
